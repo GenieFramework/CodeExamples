@@ -9,7 +9,7 @@ export House
     id::DbId = DbId()
     street::String = "Random street"
     size::Float32 = 100.0
-    rooms::Union{Int32,Nothing} = nothing
+    rooms::Union{Int32,Nothing, Missing} = nothing
 end
 
 end
