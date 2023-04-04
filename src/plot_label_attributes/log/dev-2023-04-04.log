@@ -1,0 +1,14 @@
+┌ Info: 2023-04-04 15:56:57 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/dfish/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-04-04 15:56:59 Watching ["/home/dfish/.julia/dev/CodeExamples/src/plot_label_attributes"]
+└ @ GenieAutoReload /home/dfish/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-04-04 15:57:45 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/dfish/.julia/packages/Genie/SKepC/src/Server.jl:161
+┌ Info: 2023-04-04 15:57:47 Watching ["/home/dfish/.julia/dev/CodeExamples/src/plot_label_attributes"]
+└ @ GenieAutoReload /home/dfish/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:19
+┌ Info: 2023-04-04 15:57:47 Listening on: 127.0.0.1:8000, thread id: 2
+└ @ HTTP.Servers /home/dfish/.julia/packages/HTTP/z8l0i/src/Servers.jl:366
+┌ Info: 2023-04-04 15:58:26 Autoreloading
+└ @ GenieAutoReload /home/dfish/.julia/packages/GenieAutoReload/IuBCb/src/GenieAutoReload.jl:22
