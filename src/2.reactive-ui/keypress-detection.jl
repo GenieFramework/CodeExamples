@@ -1,9 +1,11 @@
 #=
+## Keypress detection
+
 Detect a key press event and display a message
 =#
 
 module App
-using GenieFramework, Stipple, StippleUI, Stipple.ReactiveTools
+using GenieFramework
 @genietools
 
 @app begin
@@ -13,8 +15,6 @@ using GenieFramework, Stipple, StippleUI, Stipple.ReactiveTools
 end
 
 ui() =  textfield(class = "q-my-md", "Input", :input, hint = "Please enter some words", @on("keyup.enter", :keypress))
-
-
 
 @page("/", ui)
 Server.up()
