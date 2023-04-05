@@ -2,11 +2,13 @@
 
 ## Mutating reactive variables in various contexts
 
-Change the value of a reactive variable tagged with `@in` or `@out` from outside of an `@onchange` block
+**Change the value of a reactive variable tagged with `@in` or `@out` from outside of an `@onchange` block.**
 
-To see how this example works, open browser tabs at these routes in sequential order: `/`, `/test` and `/global`.
+::alert{type="info"}
+This is an advanced example.
+::
 
-You'll see that when `/global` is accessed the text in the `/test` tab will change to `global!`.
+Open browser tabs at these routes in sequential order: `/`, `/test` and `/global`. You'll see that when `/global` is accessed the text in the `/test` tab will change to `global!`.
 =#
 
 module App
@@ -43,16 +45,20 @@ end
 
 #=
 
+The model can also be modified from outside of the `App` module as
+
+```julia
+App.model.message[] = "Outside of App module"
+```
+
+**Explanation**
+
+
 Reactive variables are only directly accessible within an `@onchange` block, either via the variable's name or via the `__model__` object. This `__model__` is a `ReactiveModel` struct that holds the reactive variables and code in `@app`.
 
 When a request is made on a route, a new model is created for this specific request. The model holds a copy of the reactive variables and code declared in `@app`, and it can be accessed with the `@init` macro.
 
 To make the model created for a route accessible from other contexts, the model must be made global.
 
-The model can also be modified from outside of the `App` module as
-
-```julia
-App.model.message[] = "Outside of App module"
-```
 
 =#
