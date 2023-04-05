@@ -1,5 +1,7 @@
 #=
-Generate a new image and refresh it in the browser every time a button is pressed.
+## Updating an image
+
+**Generate a new image and refresh it in the browser every time a button is pressed.**
 =#
 
 using FileIO, ImageIO, Colors
@@ -20,10 +22,10 @@ const BASEURL = "/demo.png"
         imageurl = "$BASEURL#$(Base.time())"
     end
 end
-        
+
 function ui()
     [button("Refresh", @click("refresh = !refresh"))
-    imageview(src=:imageurl, spinnercolor="white", style="height: 140px; max-width: 150px")]
+        imageview(src=:imageurl, spinnercolor="white", style="height: 140px; max-width: 150px")]
 end
 
 @page("/", ui)
