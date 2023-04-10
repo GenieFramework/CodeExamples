@@ -1,7 +1,7 @@
 #=
 ## Updating an image
 
-Generate a new image and refresh it in the browser every time a button is pressed.
+**Generate a new image and refresh it in the browser every time a button is pressed.**
 =#
 
 using FileIO, ImageIO, Colors
