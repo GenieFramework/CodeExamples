@@ -1,5 +1,0 @@
-<q-input v-model="toggle_name"> </q-input>
-<q-btn v-on:click="process = !process">Add toggle </q-btn>
-<div v-for="toggle in toggle_list">
-  <q-toggle v-model="toggle['active']" :label="toggle['name']" />
-</div>
