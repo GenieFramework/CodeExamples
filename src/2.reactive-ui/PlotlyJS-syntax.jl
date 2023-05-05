@@ -10,7 +10,7 @@ using GenieFramework, PlotlyBase
 trace1 = scatter(; x=1:4, y=[0, 2, 3, 5], fill="tozeroy")
 trace2 = scatter(; x=1:4, y=[3, 5, 1, 7], fill="tonexty")
 
-@handlers begin
+@app begin
     @out plot = Plot([trace1, trace2], PlotlyBase.Layout(title="Filled line chart"))
 end
 
