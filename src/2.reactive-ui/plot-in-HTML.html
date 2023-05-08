@@ -1,0 +1,29 @@
+<div></div>
+<div id="iv4j" class="row">
+    <div class="col col-12 col-sm">
+        <plotly :data="[
+        {
+          x: firstX,
+          y: firstY,
+          mode: 'markers',
+          type: 'scatter',
+          line: { color: 'rgb(201, 90, 218)', width: 1.5 },
+          marker: { symbol: 'star', color: 'rgb(201, 90, 218)', size: 8 }
+        },
+        {
+          x: secondX,
+          y: secondY,
+          mode: 'lines+markers',
+          type: 'scatter',
+          line: { color: 'rgba(61, 185, 100, 0.8)', width: 1.5 },
+          marker: { color: 'rgb(61, 185, 100)', size: 8 }
+        },
+      ]" :layout="{ 
+        title: 'Genie PlotlyJS Plot Example',
+        xaxis: { title: 'α Axis', range: [0, 5], backgroundcolor: 'lightgray' },
+        yaxis: { title: 'β Axis', range: [-1, 6], backgroundcolor: 'lightgray' },
+        legend: { x: 0.5, y: -0.3, orientation: 'h' }
+      }" id="ir6k-2">
+        </plotly>
+    </div>
+</div>
