@@ -1,3 +1,10 @@
+#=
+## Plot in HTML
+
+**Define a plot in the HTML code with PlotlyJS syntax.**
+
+The `data` and `layout` fields of the `plotly` component are directly defined in the HTML code, with the `x` and `y` attributes in each trace bound to Julia variables.
+=#
 module App
 using GenieFramework
 @genietools
@@ -13,3 +20,11 @@ end
 @page("/", "plot-in-HTML.html")
 Server.isrunning() || Server.up()
 end
+
+#=
+**HTML code**
+
+```html
+:::plot-in-HTML.html:::
+```
+=#
