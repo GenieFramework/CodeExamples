@@ -1,7 +1,5 @@
 #=
-## Updating an image
-
-**Generate a new image and refresh it in the browser every time a button is pressed.**
+Generate a new image and refresh it in the browser every time a button is pressed.
 =#
 
 using FileIO, ImageIO, Colors
@@ -17,15 +15,15 @@ const BASEURL = "/demo.png"
     @out imageurl = "/demo.png"
     @onchange refresh begin
         img = rand(RGB, 100, 100)
-        ## add an (invalid) anchor to the imagepath in order to trigger a reload in the Quasar/Vue backend
+        # add an (invalid) anchor to the imagepath in order to trigger a reload in the Quasar/Vue backend
         save(IMGPATH, img)
         imageurl = "$BASEURL#$(Base.time())"
     end
 end
-
+        
 function ui()
     [button("Refresh", @click("refresh = !refresh"))
-        imageview(src=:imageurl, spinnercolor="white", style="height: 140px; max-width: 150px")]
+    imageview(src=:imageurl, spinnercolor="white", style="height: 140px; max-width: 150px")]
 end
 
 @page("/", ui)

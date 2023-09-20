@@ -17,9 +17,6 @@ function add_frontmatter(content)
     ---
     title: $title
     description: $description
-    meta:
-        - name: 'og:title'
-        - content: '$title - Genie Cloud Resource Hub'
     ---
 
     $content
