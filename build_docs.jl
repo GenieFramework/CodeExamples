@@ -3,7 +3,7 @@ using Literate
 src_directory = "src"
 sections = ["2.reactive-ui"]
 md_directory = "markdown/"
-docs_site_path = "../../geniedocssite/content/4.examples/"
+docs_site_path = "/Users/pere/genie/docs/GenieFrameworkDocs/content/4.examples/"
 
 
 function add_frontmatter(content)
