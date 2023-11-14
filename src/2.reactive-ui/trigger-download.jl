@@ -13,12 +13,15 @@ using GenieFramework
         ## do some processing and write to a file
         write("./public/data.zip", string(randn(10)))
         sleep(2)
-        ## change the link url to trigger the file download script. The URL will still point to the same file, but the link href will have a different anchor after the #
+        ## change the link url to trigger the file download script. The URL will still point to 
+        ## the same file, but the link href will have a different anchor after the #
         linkhref = "/data.zip#($(rand(1)))"
     end
 end
 
-## Define a script that will watch the href attribute in the link, and click it when it changes. This @mounted block will be run when the page is loaded in the browser. The script is activated with a 2 second delay to allow the browser to render the link first
+## Define a script that will watch the href attribute in the link, and click it when it changes. 
+## This @mounted block will be run when the page is loaded in the browser. The script is activated
+## with a 2 second delay to allow the browser to render the link first
 @mounted """
     setTimeout(() => {
         var linkToWatch = document.getElementById('dynamicLink');
