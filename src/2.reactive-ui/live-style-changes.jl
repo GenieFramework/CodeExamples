@@ -1,6 +1,6 @@
 
 #=
-## Keypress detection
+## Live style changes
 
 **Change the style of an element on the fly.**
 The `style` attribute must be bound to a reactive variable, where all the styling information is stored. Editing this variable will change the style in the browser.
