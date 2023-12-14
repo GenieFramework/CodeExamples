@@ -1,7 +1,7 @@
 using Literate
 
 src_directory = "src"
-sections = ["2.reactive-ui"]
+sections = ["1.server", "2.reactive-ui"]
 md_directory = "markdown/"
 docs_site_path = "/Users/pere/genie/docs/GenieFrameworkDocs/content/1.docs/4.examples/"
 
